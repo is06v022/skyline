@@ -36,6 +36,14 @@
                     }
                     row = row +'</tr>' ;
                     document.getElementById('t_head').insertAdjacentHTML('beforeend',row);
+                    for(let i = 1 ; i <= 9; i++){
+                        let row ='<tr><th>' + i +'</th>';
+                            for (let j = 1 ; j <= 9; j++){
+                                row = row + '<td>'+ i*j + '</td>';
+                            }
+                            row = row + '</tr>';
+                            document.getElementById('t_body').insertAdjacentHTML('beforeend',row);
+                    }
             }
 
 
